@@ -6,7 +6,7 @@ import "fmt"
 // and those VARIABLES have IDENTIFIERS
 var x int
 
-type person struct {
+type person2 struct {
 	first string
 	last  string
 }
@@ -18,8 +18,10 @@ const bar = 42
 
 func main() {
 	y = bar
+	z := person2{first: "fdsa", last: "gdfg"}
 
 	fmt.Printf("%T\n", y)
+	fmt.Printf("%T\n", z)
 	fmt.Printf("%T\n", bar)
 	fmt.Println(bar)
 }
